@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xác định vị trí phần tử</title>
+</head>
+
+<body>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            border: 1px solid;
+            display: inline-block;
+        }
+
+        .div01 {
+            background-color: red;
+            position: static;
+        }
+
+        .div02 {
+            background-color: green;
+            position: fixed;
+            top: 100px;
+            right: 100px;
+        }
+
+        .div03 {
+            background-color: blue;
+            position: relative;
+            top: 50px;
+            left: 50px;
+        }
+
+        .div04 {
+            background-color: orange;
+            position: sticky;
+            top: 0;
+            /* right: 50px; */
+        }
+
+        .div05 {
+            width: 200px;
+            height: 800px;
+            position: relative;
+        }
+
+        .div06 {
+            width: 50px;
+            height: 50px;
+            background-color: brown;
+            position: absolute;
+            top: 20px;
+            right: 30px;
+        }
+    </style>
+    <div class="div01">Div01</div>
+    <div class="div02">Div02</div>
+    <div class="div03">Div03</div>
+    <div class="div04">Div04</div>
+    <div class="div05">
+        Div05
+        <div class="div06">Div06</div>
+    </div>
+</body>
+
+</html>
